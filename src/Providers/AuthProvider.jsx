@@ -21,7 +21,7 @@ const AuthProvider = ({ children }) => {
                     email: currentUser.email
                 }
 
-                fetch('https://car-doctor-server-delta-taupe.vercel.app/jwt', {
+                fetch('https://car-doctor-server-blue-one.vercel.app/jwt', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json'

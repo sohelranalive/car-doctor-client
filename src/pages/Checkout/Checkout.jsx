@@ -30,7 +30,7 @@ const Checkout = () => {
 
         console.log(order);
 
-        fetch('https://car-doctor-server-delta-taupe.vercel.app/bookings', {
+        fetch('https://car-doctor-server-blue-one.vercel.app/bookings', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

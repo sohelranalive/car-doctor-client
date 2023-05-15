@@ -10,7 +10,7 @@ const Bookings = () => {
     const [control, setControl] = useState(false)
     const navigate = useNavigate()
 
-    const url = `https://car-doctor-server-delta-taupe.vercel.app/bookings?email=${user?.email}`
+    const url = `https://car-doctor-server-blue-one.vercel.app/bookings?email=${user?.email}`
 
     useEffect(() => {
         fetch(url, {
@@ -35,7 +35,7 @@ const Bookings = () => {
     const handleStatusChanged = (id) => {
         console.log('Clicked', id);
 
-        fetch(`https://car-doctor-server-delta-taupe.vercel.app/booking/${id}`, {
+        fetch(`https://car-doctor-server-blue-one.vercel.app/booking/${id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'

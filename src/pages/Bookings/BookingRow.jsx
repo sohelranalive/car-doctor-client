@@ -5,7 +5,7 @@ const BookingRow = ({ booking, control, setControl, handleStatusChanged }) => {
     const handleDelete = (id) => {
         const proceed = confirm('Are you sure?')
         if (proceed) {
-            fetch(`https://car-doctor-server-delta-taupe.vercel.app/booking/${id}`, {
+            fetch(`https://car-doctor-server-blue-one.vercel.app/booking/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
